@@ -59,7 +59,7 @@ std::string getFileName(const std::string& path) {
 
 std::string compileCommand(const std::string& filePath, const std::string& extension) {
 	std::string fileName = getFileName(filePath);
-	std::string command = "g++ -c " + filePath;
+	std::string command = "nasm -c " + filePath;
 
 	std::string libPath = getLibPath();
 	command += " -I \"" + libPath + "\"";
