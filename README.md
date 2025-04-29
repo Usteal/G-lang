@@ -1,10 +1,3 @@
-# G-lang
-G-lang is a Compiler based programming language, meant to minimize boilerplate code in the systems programming space
+# GOCX
 
-The language will be documented in the wiki tab for easy acces
-
-The syntax is inspired by c, c++ and assembly
-
-Compiler flow:
-
-None cuz I havent finished it
+This language will unify graphics compute across AMD, Nvidia and Intel GPU's.
