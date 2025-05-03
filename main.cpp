@@ -163,6 +163,8 @@ string compile(vector<string> codeLines) {
         vector<string> vars;
         string asmOut;
 
+	// on a side note how do gpu langs load gpu with code?
+	
         asmOut += "section .text\n global start\n extern ExitProcess\n\nstart:\n call main\n call ExitProcess\n";
 
         for (string line : codeLines) {
