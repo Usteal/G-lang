@@ -1,7 +1,7 @@
-#cpu {
-  send
-}
+@cpu {
+  mov(@cpu[0x00], @gpu[0xff]);
+};
 
-#gpu {
-  send
-}
+@gpu {
+  add(@gpu[0xff],0.4796);
+};
