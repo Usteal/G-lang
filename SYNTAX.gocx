@@ -8,4 +8,7 @@ once {
 @gpu:
 loop {
   data1 = data1++;
+  if (data1 >= 0.542) {
+    data1 = 0;
+  };
 };
