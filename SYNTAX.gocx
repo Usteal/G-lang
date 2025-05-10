@@ -1,7 +1,11 @@
-@cpu {
-  mov(@cpu[0x00], @gpu[0xff]);
+flt data1;
+
+@cpu:
+once {
+  data1 = [0xffff]
 };
 
-@gpu {
-  add(@gpu[0xff],0.4796);
+@gpu:
+loop {
+  data1 = data1++;
 };
