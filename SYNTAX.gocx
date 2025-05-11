@@ -3,7 +3,7 @@ flt data1;
 @cpu:
 once {
   data1 = [0xffff]
-  gpu
+  ret;
 };
 
 @gpu:
@@ -15,4 +15,5 @@ loop {
   while (true) {
     end;
   };
+  ret;
 };
