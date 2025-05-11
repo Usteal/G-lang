@@ -3,6 +3,7 @@ flt data1;
 @cpu:
 once {
   data1 = [0xffff]
+  gpu
 };
 
 @gpu:
@@ -10,5 +11,8 @@ loop {
   data1 = data1++;
   if (data1 >= 0.542) {
     data1 = 0;
+  };
+  while (true) {
+    end;
   };
 };
