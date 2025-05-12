@@ -1,18 +1,18 @@
 flt data1;
 
 @cpu:
-once {
-  data1 = [0xffff]
+#once {
+  %data1 = [0xffff]
   ret;
 };
 
 @gpu:
-loop {
-  data1 = data1++;
-  if (data1 >= 0.542) {
+#loop {
+  %data1 = data1++;
+  #if (data1 >= 0.542) {
     data1 = 0;
   };
-  while (true) {
+  #while (true) {
     end;
   };
   ret;
