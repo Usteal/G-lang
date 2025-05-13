@@ -1,6 +1,6 @@
-use gpu1;
+#use gpu0;
 
-flt data1;
+#flt data1;
 
 @cpu:
 #once {
