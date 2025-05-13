@@ -1,3 +1,5 @@
+use gpu1;
+
 flt data1;
 
 @cpu:
