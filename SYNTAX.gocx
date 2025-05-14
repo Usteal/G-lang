@@ -1,4 +1,4 @@
-#use gpu0;
+#use gpu(0);
 
 #flt data1;
 
