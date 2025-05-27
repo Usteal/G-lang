@@ -1,21 +1,3 @@
-#use gpu[0];
+load cpu(esp) -> $0000ff00;
 
-#flt data1;
-
-@cpu:
-#once {
-  %data1 = [0xffff]
-  ret;
-};
-
-@gpu:
-#loop {
-  %data1 = data1++;
-  #if (data1 >= 0.542) {
-    data1 = 0;
-  };
-  #while (true) {
-    end;
-  };
-  ret;
-};
+ptr* 0000ff00 -> cache(1);
