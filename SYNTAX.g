@@ -1,1 +1,1 @@
-ptr cpu[eax] -> cache[0]
+eax = ebx;
