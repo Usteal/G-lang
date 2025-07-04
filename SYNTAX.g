@@ -1,1 +1,1 @@
-this is not getting finished anytime soon prolly
+installed linux yesterday
